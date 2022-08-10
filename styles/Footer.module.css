@@ -1,0 +1,58 @@
+.footer{
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    bottom: 0;
+    padding: 5% 15%;
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.apps{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.app > p{
+    margin-top: -5px;
+    font-size: 11px;
+}
+
+.menu_icon > span{
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 25%;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .footer{
+        padding: 10px 15%;
+        height: 110px
+    }
+    .apps{
+        width: 70%
+    }
+    .menu_icon > span{
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer{
+        height: 100px;
+    }
+    .apps{
+        width: 75%
+    }
+    .menu_icon > span{
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
