@@ -48,8 +48,78 @@
   bottom: 19%;
 }
 
-@media (min-width: 768px) {
+
+.apps{
+  display: grid;
+  margin: 50px auto ;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.app > p{
+  margin-top: -5px;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.app_icon > span{
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .apps{
+    grid-template-columns: auto auto auto auto;
+    padding: 25px 10px;
+    margin: auto;
+    grid-template-rows: 90px 90px 90px;
+    justify-items: center;
+  }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
   .lockscreen{
     margin-top: 5% ;
+  }
+
+  .apps{
+    margin: 17px auto;
+    padding: 19px 20px;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 115px 115px;
+    max-width: 768px;
+  }
+
+  .app_icon > span{
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .apps{
+    margin: 27px auto;
+    padding: 35px 10px;
+    grid-template-rows: 152px 152px;
+    max-width: 992px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .apps{
+    margin: 60px auto;
+    padding: 30px 40px;
+    grid-template-columns: 15.5vw 15.5vw 15.5vw 15.5vw 15.5vw 15.5vw;
+    grid-template-rows: 180px 180px;
+    max-width: 100%;
+  } 
+  .app_icon > span{
+    width: 70px !important;
+    height: 70px !important;
   }
 }
